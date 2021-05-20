@@ -1,9 +1,14 @@
 #include <stdio.h>
 
 int main(void){
-    int n = 22;
-    for(int i = 0;i<=10;i++){
-        n = n*n;
-        printf("%d\n",n);
-    }
+    unsigned short a = 65535;
+    unsigned short b = a+1;
+
+    float c = 1.0E39;
+    float d = 1.0000005E10;
+// overflow;
+    printf("a is %d, b is %d\n",a,b);
+    printf("c is %E\n",c);
+    printf("d is %E\n",d);
+// 
 }
